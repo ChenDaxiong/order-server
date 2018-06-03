@@ -3,10 +3,7 @@ package com.cx.form;
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 
-/**
- * Created by 廖师兄
- * 2017-12-10 17:21
- */
+
 @Data
 public class OrderForm {
 

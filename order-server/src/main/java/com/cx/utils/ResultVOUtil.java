@@ -3,10 +3,7 @@ package com.cx.utils;
 
 import com.cx.VO.ResultVO;
 
-/**
- * Created by 廖师兄
- * 2017-12-10 18:03
- */
+
 public class ResultVOUtil {
 
     public static ResultVO success(Object object) {

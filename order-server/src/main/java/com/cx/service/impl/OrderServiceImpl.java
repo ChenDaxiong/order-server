@@ -15,16 +15,14 @@ import com.cx.utils.KeyUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by 廖师兄
- * 2017-12-10 16:44
- */
+
 @Service
 public class OrderServiceImpl implements OrderService {
 
@@ -36,6 +34,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private ProductClient productClient;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     /**
      * 创建订单  需要根据订单中的商品id 调用商品服务中的接口得到商品相关的信息 然后计算总价。
@@ -52,6 +53,7 @@ public class OrderServiceImpl implements OrderService {
                 .collect(Collectors.toList());
         //使用feign方式进行调用
         List<ProductInfoForOrder> productInfoList = productClient.getProductList(productIdList);
+       // List<ProductInfoForOrder> productInfoList=restTemplate.getForObject("http://PRODUCT/product/listByIds",List.class);
 
        //计算总价
         BigDecimal orderAmout = new BigDecimal(BigInteger.ZERO);

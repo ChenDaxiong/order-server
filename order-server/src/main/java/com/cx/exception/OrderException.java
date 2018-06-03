@@ -3,10 +3,7 @@ package com.cx.exception;
 
 import com.cx.enums.ResultEnum;
 
-/**
- * Created by 廖师兄
- * 2017-12-10 17:27
- */
+
 public class OrderException extends RuntimeException {
 
     private Integer code;

@@ -20,10 +20,6 @@ import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by 廖师兄
- * 2017-12-10 16:36
- */
 @RestController
 @RequestMapping("/order")
 @Slf4j
@@ -39,7 +35,7 @@ public class OrderController {
      * 4. 扣库存(调用商品服务)
      * 5. 订单入库
      */
-    @PostMapping("/create")
+    @RequestMapping("/create")
     public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
                                                 BindingResult bindingResult) {
         if (bindingResult.hasErrors()){

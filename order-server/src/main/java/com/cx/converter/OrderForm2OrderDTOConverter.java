@@ -13,10 +13,6 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by 廖师兄
- * 2017-12-10 17:38
- */
 @Slf4j
 public class OrderForm2OrderDTOConverter {
 

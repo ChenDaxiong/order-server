@@ -6,10 +6,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.List;
 
-/**
- * Created by 廖师兄
- * 2017-12-10 16:42
- */
+
 @Data
 public class OrderDTO {
 

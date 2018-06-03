@@ -16,10 +16,10 @@ public interface ProductClient {
     @RequestMapping("getProductMsg")
     String getProductMsg();
 
-    @PostMapping("/listByIds")
+    @RequestMapping("product/listByIds")
     public List<ProductInfoForOrder> getProductList(@RequestBody List<String> productIdList);
 
-    @PostMapping("/decreaseStock")
+    @PostMapping("product/decreaseStock")
     public void decreaseStock(@RequestBody List<DecreaseStockInput> decreaseStockInputList);
 
 }

@@ -2,10 +2,7 @@ package com.cx.enums;
 
 import lombok.Getter;
 
-/**
- * Created by 廖师兄
- * 2017-12-10 17:32
- */
+
 @Getter
 public enum ResultEnum {
     PARAM_ERROR(1, "参数错误"),
