@@ -27,7 +27,12 @@
 
 	<dependencies>
 
-		<!---->
+		<dependency>
+			<groupId>com.cx</groupId>
+			<artifactId>product-client</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.cx</groupId>
 			<artifactId>order-client</artifactId>

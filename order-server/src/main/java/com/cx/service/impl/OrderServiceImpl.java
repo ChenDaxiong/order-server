@@ -1,7 +1,7 @@
 package com.cx.service.impl;
 
 import com.cx.DecreaseStockInput;
-import com.cx.client.ProductClient;
+import com.cx.ProductClient;
 import com.cx.ProductInfoForOrder;
 import com.cx.dataobject.OrderDetail;
 import com.cx.dataobject.OrderMaster;
