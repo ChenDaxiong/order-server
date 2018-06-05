@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(basePackages ="") //必须要扫描才能调用对方服务的接口
+@EnableFeignClients(basePackages ="com.cx") //必须要扫描才能调用对方服务的接口
 public class OrderServerApplication {
 
 	public static void main(String[] args) {
